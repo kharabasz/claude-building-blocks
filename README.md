@@ -27,9 +27,15 @@ Rewrites AI-sounding prose so it reads like the writer without changing what it 
 
 Imported unchanged from [blader/humanizer](https://github.com/blader/humanizer) (v3.1.0, commit `8c307f3`), MIT licensed, © 2025 Siqi Chen. Its own licence is in `skills/humanizer/LICENSE`.
 
+### ste100
+
+Writes or rewrites technical text in Simplified Technical English by the ASD-STE100 writing rules: approved words with one meaning, sentences of at most 20 words in procedures and 25 in descriptions, imperative steps, active voice, noun clusters of at most three words, and safety instructions that start with a command. Invoke it with `/ste100` or ask Claude to answer in STE.
+
+The skill summarises the rules in its own words. It does not contain the ASD-STE100 dictionary, which is copyrighted by ASD and free on request from [asd-ste100.org](https://www.asd-ste100.org/). Check certified output against the official dictionary.
+
 ## Install
 
-At the prompt of a terminal session (swap `spend-bar` for `humanizer` as needed):
+At the prompt of a terminal session (swap `spend-bar` for `humanizer` or `ste100` as needed):
 
 ```
 /plugin install spend-bar --marketplace kharabasz/claude-building-blocks

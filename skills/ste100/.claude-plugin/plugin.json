@@ -1,0 +1,7 @@
+{
+  "name": "ste100",
+  "version": "0.1.0",
+  "description": "Write or rewrite technical text in Simplified Technical English following the ASD-STE100 writing rules",
+  "author": { "name": "Kacper Harabasz" },
+  "license": "MIT"
+}
