@@ -17,6 +17,16 @@ Values under their thresholds are plain dim text; values past them become pills 
 
 Option: **Prompt cache TTL** (`1h` default for subscriptions, `5m` for most API keys), in the config menu.
 
+#### Usage stats
+
+The bar also records how each session uses tokens, for a later spend review. It records metadata only, never prompt text, file contents or command output:
+
+- each model request: model, effort, main thread or subagent, input, output, cache read and cache write tokens, the idle gap before it, and context %
+- each tool call: tool name, result size, error or denied, and a hash of the file path (to spot repeated reads)
+- compactions (trigger, size before and after), subagents spawned, skills run, and the tools and MCP servers loaded at session start
+
+Each session writes a JSONL file per day to `%LOCALAPPDATA%\claude-building-blocks\spend-bar\events\<date>\<session>.jsonl` (`$XDG_STATE_HOME` or `~/.local/state` elsewhere). Daily totals are kept in the plugin's store. Both are deleted after 30 days. Options: **Collect usage stats** (on by default) and **Stats folder**.
+
 Requires Claude Code 2.1.308 or newer.
 
 ## Skills
