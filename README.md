@@ -21,8 +21,6 @@ Requires Claude Code 2.1.308 or newer.
 
 ## Install
 
-This repository is private: installing needs read access to it and a git credential for github.com on your machine (an SSH key, or `gh auth login` then `gh auth setup-git`).
-
 At the prompt of a terminal session:
 
 ```
