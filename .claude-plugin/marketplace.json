@@ -1,11 +1,18 @@
 {
   "name": "claude-building-blocks",
-  "owner": { "name": "Kacper Harabasz" },
+  "owner": {
+    "name": "Kacper Harabasz"
+  },
   "plugins": [
     {
       "name": "spend-bar",
       "source": "./mods/spend-bar",
       "description": "A bar above the prompt with session/weekly limits, prompt-cache status, context usage and a compact button"
+    },
+    {
+      "name": "humanizer",
+      "source": "./skills/humanizer",
+      "description": "Skill that rewrites AI-sounding prose to remove common AI writing patterns (imported from blader/humanizer, MIT)"
     }
   ]
 }

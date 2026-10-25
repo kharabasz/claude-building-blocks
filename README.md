@@ -19,9 +19,17 @@ Option: **Prompt cache TTL** (`1h` default for subscriptions, `5m` for most API 
 
 Requires Claude Code 2.1.308 or newer.
 
+## Skills
+
+### humanizer
+
+Rewrites AI-sounding prose so it reads like the writer without changing what it says: contrasts, one-line closers, forced triads, dashes, inflated claims, stock AI words, decorative formatting and chat leftovers. Invoke it with `/humanizer` or ask Claude to humanize a piece of text.
+
+Imported unchanged from [blader/humanizer](https://github.com/blader/humanizer) (v3.1.0, commit `8c307f3`), MIT licensed, © 2025 Siqi Chen. Its own licence is in `skills/humanizer/LICENSE`.
+
 ## Install
 
-At the prompt of a terminal session:
+At the prompt of a terminal session (swap `spend-bar` for `humanizer` as needed):
 
 ```
 /plugin install spend-bar --marketplace kharabasz/claude-building-blocks
@@ -37,7 +45,7 @@ In the desktop app, where `/plugin` does not run: click **+** next to the prompt
 
 ## Developing
 
-Each mod lives in `mods/<name>/`. Check one with:
+Each mod lives in `mods/<name>/` and each skill plugin in `skills/<name>/`. Check one with:
 
 ```bash
 claude plugin validate mods/spend-bar
