@@ -1,0 +1,11 @@
+{
+  "name": "claude-building-blocks",
+  "owner": { "name": "Kacper Harabasz" },
+  "plugins": [
+    {
+      "name": "spend-bar",
+      "source": "./mods/spend-bar",
+      "description": "A bar above the prompt with session/weekly limits, prompt-cache status, context usage and a compact button"
+    }
+  ]
+}
