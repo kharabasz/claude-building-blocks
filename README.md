@@ -11,7 +11,7 @@ A bar above the prompt showing:
 - **Session (5h) and weekly usage limits**, with time until each resets — amber above 70%, red above 90%
 - **Prompt cache status**, counted down from the last model response — amber in the last fifth of the TTL, red once expired
 - **Context usage** — amber above 40%, red above 60%
-- A **Compact** button (hotkey `c` while the bar has focus) that runs the same compaction as `/compact`
+- A **Compact** button (hotkey `c` while the bar has focus) that runs `/compact` in the chat, as the session rail does. It reads **Compacting…** while any compaction runs (automatic ones too) and is dimmed and inactive below 30% context
 
 Values under their thresholds are plain dim text; values past them become pills (rounded SVG pills on the desktop app, coloured labels in the terminal).
 
