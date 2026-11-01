@@ -1,0 +1,9 @@
+{
+  "name": "plain-direct-voice",
+  "version": "0.1.0",
+  "description": "Write and edit blog posts and essays in a plain, direct voice",
+  "author": { "name": "Kacper Harabasz", "url": "https://github.com/kharabasz" },
+  "homepage": "https://codingthinks.com",
+  "repository": "https://github.com/kharabasz/claude-building-blocks",
+  "license": "MIT"
+}

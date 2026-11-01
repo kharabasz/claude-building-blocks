@@ -13,6 +13,16 @@
       "name": "humanizer",
       "source": "./skills/humanizer",
       "description": "Skill that rewrites AI-sounding prose to remove common AI writing patterns (imported from blader/humanizer, MIT)"
+    },
+    {
+      "name": "plain-direct-voice",
+      "source": "./skills/plain-direct-voice",
+      "description": "Skill that writes and edits blog posts and essays in a plain, direct voice"
+    },
+    {
+      "name": "writing-quorum-review",
+      "source": "./skills/writing-quorum-review",
+      "description": "Skill that reviews a blog post or essay with four models in parallel and applies only the findings a quorum agrees on"
     }
   ]
 }

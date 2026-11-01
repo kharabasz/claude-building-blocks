@@ -37,9 +37,17 @@ Rewrites AI-sounding prose so it reads like the writer without changing what it 
 
 Imported unchanged from [blader/humanizer](https://github.com/blader/humanizer) (v3.1.0, commit `8c307f3`), MIT licensed, © 2025 Siqi Chen. Its own licence is in `skills/humanizer/LICENSE`.
 
+### plain-direct-voice
+
+Writes and edits blog posts and essays in a plain, direct voice: plain assertions, everyday words, no callbacks or wordplay, light on research, other people's stories told second-hand, and endings that state the practice. The rules and examples come from a writer's edits to [Token boxing](https://codingthinks.com/ai/token-boxing/). It flags once when a plainer word changes what a source says. Use it with humanizer: humanizer removes AI habits, and this skill is the writer's sample it matches. Invoke it with `/plain-direct-voice` or ask Claude to write in a plain, direct voice. Not for code, commit messages or pull requests.
+
+### writing-quorum-review
+
+Reviews a blog post, essay or article with four reviewer agents on different models (Opus, Sonnet, Haiku and Fable). Every reviewer gets the same brief with a shared list of finding tags, so their votes can be counted; Claude then applies only the findings at least three of the four agree on, breaks two-two splits in favour of what the author already proposed, and never copies in facts a reviewer made up. Use it for questions about flow, what to cut, or how to frame an idea. Invoke it with `/writing-quorum-review` or ask for a multi-model review. Pairs with `plain-direct-voice` and `humanizer` for the rewrite.
+
 ## Install
 
-At the prompt of a terminal session (swap `spend-bar` for `humanizer` as needed):
+At the prompt of a terminal session (swap `spend-bar` for `humanizer`, `plain-direct-voice` or `writing-quorum-review` as needed):
 
 ```
 /plugin install spend-bar --marketplace kharabasz/claude-building-blocks
