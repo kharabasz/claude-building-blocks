@@ -47,16 +47,32 @@ Reviews a blog post, essay or article with four reviewer agents on different mod
 
 ## Install
 
-At the prompt of a terminal session (swap `spend-bar` for `humanizer`, `plain-direct-voice` or `writing-quorum-review` as needed):
+Add the marketplace once, then install plugins from it by `name@claude-building-blocks` (swap `spend-bar` for `humanizer`, `plain-direct-voice` or `writing-quorum-review` as needed).
+
+At the prompt of a terminal session:
 
 ```
-/plugin install spend-bar --marketplace kharabasz/claude-building-blocks
+/plugin marketplace add kharabasz/claude-building-blocks
+```
+
+```
+/plugin install spend-bar@claude-building-blocks
 ```
 
 From a shell:
 
 ```bash
-claude plugin install spend-bar --marketplace kharabasz/claude-building-blocks
+claude plugin marketplace add kharabasz/claude-building-blocks
+```
+
+```bash
+claude plugin install spend-bar@claude-building-blocks
+```
+
+When a plugin is added or updated here, refresh your copy of the marketplace before installing it:
+
+```bash
+claude plugin marketplace update claude-building-blocks
 ```
 
 In the desktop app, where `/plugin` does not run: click **+** next to the prompt box, then **Plugins**, **Add marketplace** with `kharabasz/claude-building-blocks`, then **Add plugin**.
