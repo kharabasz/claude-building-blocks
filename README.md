@@ -11,8 +11,8 @@ A bar above the prompt showing:
 - **Session (5h) and weekly usage limits**, with time until each resets — amber above 70%, red above 90%
 - **Prompt cache status**, counted down from the last model response — amber in the last fifth of the TTL, red once expired
 - **Context usage** — amber above 40%, red above 60%
-- A **c** (Compact) button, also its hotkey while the bar has focus, that runs `/compact` in the chat, as the session rail does. It reads **c…** while any compaction runs (automatic ones too) and is dimmed and inactive below 30% context. It turns amber from 40% context, the point to compact by
-- An **o** (Optimize spend) button, also its hotkey, that scores this session and the past week from the usage stats below and asks Claude for suggestions. It looks at the share of tokens sent above 40% context, turns over 50 requests, shell calls per request, repeated reads, tool results over 20k characters, cache rewrites over 100k tokens, the most used shell commands and the most common shell errors
+- A **↓** (Compact) button, hotkey `c` while the bar has focus, that runs `/compact` in the chat, as the session rail does. It reads **↓…** while any compaction runs (automatic ones too) and is dimmed and inactive below 30% context. It turns amber from 40% context, the point to compact by
+- A **$** (Optimize spend) button, hotkey `o`, that scores this session and the past week from the usage stats below and asks Claude for suggestions. It looks at the share of tokens sent above 40% context, turns over 50 requests, shell calls per request, repeated reads, tool results over 20k characters, cache rewrites over 100k tokens, the most used shell commands and the most common shell errors
 
 A toast appears when one main-thread turn reaches 40 model requests, since each request resends the whole context.
 
