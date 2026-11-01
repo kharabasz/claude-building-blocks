@@ -7,7 +7,7 @@
     {
       "name": "spend-bar",
       "source": "./mods/spend-bar",
-      "description": "A bar above the prompt with session/weekly limits, prompt-cache status, context usage and a compact button"
+      "description": "A bar above the prompt with session/weekly limits, prompt-cache status, context usage, compact and spend-review buttons, and trimming of long shell output"
     },
     {
       "name": "humanizer",
