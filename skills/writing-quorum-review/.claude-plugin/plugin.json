@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Review a blog post or essay with four models in parallel and act only on findings a quorum agrees on",
   "author": { "name": "Kacper Harabasz", "url": "https://github.com/kharabasz" },
-  "homepage": "https://github.com/kharabasz/claude-building-blocks",
-  "repository": "https://github.com/kharabasz/claude-building-blocks",
+  "homepage": "https://github.com/kharabasz/claude-toolkit",
+  "repository": "https://github.com/kharabasz/claude-toolkit",
   "license": "MIT"
 }

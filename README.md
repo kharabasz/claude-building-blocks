@@ -1,6 +1,6 @@
-# Claude building blocks
+# Claude toolkit
 
-Mods and other building blocks for Claude Code, published as a plugin marketplace.
+Mods, skills and other tools for Claude Code, published as a plugin marketplace.
 
 ## Mods
 
@@ -33,7 +33,7 @@ The bar also records how each session uses tokens, for a later spend review. It 
 - each shell call: the first word of the command (`git`, `gh`, `dotnet`, `npm`, ...) and, when it fails, the first 100 characters of its error text
 - compactions (trigger, size before and after), subagents spawned, skills run, and the tools and MCP servers loaded at session start
 
-Each session writes a JSONL file per day to `%LOCALAPPDATA%\claude-building-blocks\spend-bar\events\<date>\<session>.jsonl` (`$XDG_STATE_HOME` or `~/.local/state` elsewhere). Daily totals are kept in the plugin's store. Both are deleted after 30 days. Options: **Collect usage stats** (on by default) and **Stats folder**.
+Each session writes a JSONL file per day to `%LOCALAPPDATA%\claude-toolkit\spend-bar\events\<date>\<session>.jsonl` (`$XDG_STATE_HOME` or `~/.local/state` elsewhere). Daily totals are kept in the plugin's store. Both are deleted after 30 days. Options: **Collect usage stats** (on by default) and **Stats folder**.
 
 Requires Claude Code 2.1.308 or newer.
 
@@ -58,16 +58,16 @@ Reviews a blog post, essay or article with four reviewer agents on different mod
 At the prompt of a terminal session (swap `spend-bar` for `humanizer`, `plain-direct-voice` or `writing-quorum-review` as needed):
 
 ```
-/plugin install spend-bar --marketplace kharabasz/claude-building-blocks
+/plugin install spend-bar --marketplace kharabasz/claude-toolkit
 ```
 
 From a shell:
 
 ```bash
-claude plugin install spend-bar --marketplace kharabasz/claude-building-blocks
+claude plugin install spend-bar --marketplace kharabasz/claude-toolkit
 ```
 
-In the desktop app, where `/plugin` does not run: click **+** next to the prompt box, then **Plugins**, **Add marketplace** with `kharabasz/claude-building-blocks`, then **Add plugin**.
+In the desktop app, where `/plugin` does not run: click **+** next to the prompt box, then **Plugins**, **Add marketplace** with `kharabasz/claude-toolkit`, then **Add plugin**.
 
 ## Developing
 
