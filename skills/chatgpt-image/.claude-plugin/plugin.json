@@ -1,0 +1,9 @@
+{
+  "name": "chatgpt-image",
+  "version": "0.1.0",
+  "description": "Generate raster images with ChatGPT in the browser, one image per prompt, and save each one into the project",
+  "author": { "name": "Kacper Harabasz", "url": "https://github.com/kharabasz" },
+  "homepage": "https://github.com/kharabasz/claude-toolkit",
+  "repository": "https://github.com/kharabasz/claude-toolkit",
+  "license": "MIT"
+}

@@ -63,9 +63,13 @@ Writes and edits blog posts and essays in a plain, direct voice: plain assertion
 
 Reviews a blog post, essay or article with four reviewer agents on different models (Opus, Sonnet, Haiku and Fable). Every reviewer gets the same brief with a shared list of finding tags, so their votes can be counted; Claude then applies only the findings at least three of the four agree on, breaks two-two splits in favour of what the author already proposed, and never copies in facts a reviewer made up. Use it for questions about flow, what to cut, or how to frame an idea. Invoke it with `/writing-quorum-review` or ask for a multi-model review. Pairs with `plain-direct-voice` and `humanizer` for the rewrite.
 
+### chatgpt-image
+
+Generates raster images (art, textures, frames, ornaments, scenes) with ChatGPT in the browser and saves each one into the project, for when Claude needs an image and has no generator of its own. It sends one image per prompt, because ChatGPT spreads quality across every image in a request. It asks for standalone assets rather than mockups, and it saves each image with ChatGPT's own Download button. A script then moves the file from Downloads into the project, picking it up even while the browser still holds it as a `.tmp`. You sign in to ChatGPT yourself. It prefers Claude in Chrome, which saves without asking, because the desktop app's built-in browser asks you to accept every download. Invoke it with `/chatgpt-image` or ask Claude to make an image with ChatGPT.
+
 ## Install
 
-At the prompt of a terminal session (swap `spend-bar` for `humanizer`, `plain-direct-voice` or `writing-quorum-review` as needed):
+At the prompt of a terminal session (swap `spend-bar` for `humanizer`, `plain-direct-voice`, `writing-quorum-review` or `chatgpt-image` as needed):
 
 ```
 /plugin install spend-bar --marketplace kharabasz/claude-toolkit
