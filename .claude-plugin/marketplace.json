@@ -23,6 +23,11 @@
       "name": "writing-quorum-review",
       "source": "./skills/writing-quorum-review",
       "description": "Skill that reviews a blog post or essay with four models in parallel and applies only the findings a quorum agrees on"
+    },
+    {
+      "name": "chatgpt-image",
+      "source": "./skills/chatgpt-image",
+      "description": "Skill that generates raster images with ChatGPT in the browser, one image per prompt, and saves each one into the project"
     }
   ]
 }
