@@ -1,67 +1,6 @@
 {
   "name": "spend-bar",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "license": "MIT",
-  "description": "A bar above the prompt with usage limits or monthly extra-usage spend, session cost, prompt-cache status, context usage, compact and spend-review buttons, spend alerts, and trimming of long shell output",
-  "types": "./types/index.d.ts",
-  "userConfig": {
-    "cacheTtl": {
-      "type": "string",
-      "title": "Prompt cache TTL",
-      "description": "How long the prompt cache lives after the last response (1h on subscriptions, 5m on most API keys)",
-      "default": "1h",
-      "options": [
-        "1h",
-        "5m"
-      ]
-    },
-    "collectStats": {
-      "type": "boolean",
-      "title": "Collect usage stats",
-      "description": "Record token use, tool calls, cache rewrites and context size (metadata only, no prompt text or file contents) for a later spend review",
-      "default": true
-    },
-    "statsDir": {
-      "type": "string",
-      "title": "Stats folder",
-      "description": "Where the event log is written; empty uses %LOCALAPPDATA%\\claude-toolkit\\spend-bar\\events on Windows, ~/Library/Application Support/claude-toolkit/spend-bar/events on macOS, and $XDG_STATE_HOME or ~/.local/state elsewhere",
-      "default": ""
-    },
-    "compactWarnPercent": {
-      "type": "number",
-      "title": "Compact warning (% context)",
-      "description": "The Compact button turns amber from this share of the context window; 0 turns it off",
-      "default": 40,
-      "min": 0,
-      "max": 100
-    },
-    "turnRequestWarning": {
-      "type": "number",
-      "title": "Long turn warning (requests)",
-      "description": "Show a toast when one main-thread turn reaches this many model requests; 0 turns it off",
-      "default": 40,
-      "min": 0
-    },
-    "sessionCostWarning": {
-      "type": "number",
-      "title": "Session cost warning (USD)",
-      "description": "The session cost turns amber at this many dollars and red at twice it, with a toast at each multiple; 0 turns it off",
-      "default": 25,
-      "min": 0
-    },
-    "idleRewriteWarning": {
-      "type": "number",
-      "title": "Idle cache rewrite warning (tokens)",
-      "description": "Show a toast when a request after the prompt cache expired rewrites at least this many tokens; 0 turns it off",
-      "default": 100000,
-      "min": 0
-    },
-    "trimLimit": {
-      "type": "number",
-      "title": "Trim tool output over (characters)",
-      "description": "Bash, PowerShell and browser_batch results longer than this are cut to their head and tail, the full text saved to a file the note names; 0 turns trimming off",
-      "default": 10000,
-      "min": 0
-    }
-  }
+  "description": "Moved: spend-bar now lives at kharabasz/spend-bar. This stub only points there and will be removed."
 }

@@ -7,7 +7,7 @@
     {
       "name": "spend-bar",
       "source": "./mods/spend-bar",
-      "description": "A bar above the prompt with usage limits or monthly extra-usage spend, session cost, prompt-cache status, context usage, compact and spend-review buttons, spend alerts, and trimming of long shell output"
+      "description": "Moved to kharabasz/spend-bar (install it from that marketplace). This entry is a stub that points there and will be removed"
     },
     {
       "name": "humanizer",
