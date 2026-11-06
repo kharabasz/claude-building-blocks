@@ -5,11 +5,6 @@
   },
   "plugins": [
     {
-      "name": "spend-bar",
-      "source": "./mods/spend-bar",
-      "description": "Moved to kharabasz/spend-bar (install it from that marketplace). This entry is a stub that points there and will be removed"
-    },
-    {
       "name": "humanizer",
       "source": "./skills/humanizer",
       "description": "Skill that rewrites AI-sounding prose to remove common AI writing patterns (imported from blader/humanizer, MIT)"

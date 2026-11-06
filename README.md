@@ -1,17 +1,6 @@
 # Claude toolkit
 
-Mods, skills and other tools for Claude Code, published as a plugin marketplace.
-
-## Mods
-
-### spend-bar
-
-Moved to its own repository, [kharabasz/spend-bar](https://github.com/kharabasz/spend-bar). This marketplace keeps a stub under the old id (`spend-bar@claude-toolkit`) that shows a toast pointing there, and the stub will be removed. To move:
-
-```bash
-claude plugin install spend-bar --marketplace kharabasz/spend-bar
-claude plugin uninstall spend-bar@claude-toolkit
-```
+Skills and other tools for Claude Code, published as a plugin marketplace. The spend-bar mod moved to [kharabasz/spend-bar](https://github.com/kharabasz/spend-bar).
 
 ## Skills
 
